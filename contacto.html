@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Contacto-Julio con amigos</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <form action="enviomensajeformulario.html" method="get">
+     <h2>Formulario para usuarios</h2>
+     <h3>Rellene el siguiente formulario para poder enviarle le mejor propuesta de acuerdo a sus requisitos. </h3>
+     <fieldset>
+      <legend>Datos personales</legend>
+      <p>
+       <label for="name_id">Nombre:</label><br>
+        <input type="text" id="name_id" name="nombre" required>
+       <!-- Campo de texto -->
+      </p>
+      <p>
+       <label for="phone_id">Teléfono:</label><br>
+       <input type="tel" id="phone_id" name="telefono" >
+       <!-- Campo de teléfono -->
+      </p>
+      <p>
+       <label for="email_id">Email:</label><br>
+        <input type="email" id="email_id" name="email" required>
+       <!-- Campo de email obligatorio -->
+      </p>
+     </fieldset>
+     <fieldset>
+      <legend>Preferencias y Datos del grupos</legend>
+      <p>
+       <label for="edades">¿Qué edad tiene la persona más pequeña?</label><br>
+        <select name="edades" id="edades" required>
+          <option value="Edad 1"> 18-23 años</option>
+          
+          <option value="Edad 2"> 24-29 años</option>
+          
+          <option value="Edad 3"> +30 años</option>
+        </select>
+       <!-- Menú con 1 opción seleccionable de entre estas: Modelo 1, Modelo 2 y Modelo 3 --> 
+      </p>
+      <p>Prioridadades del viaje:
+       <ul>
+        <li>
+          <input type="checkbox" id="prioturismo" name="prioridadesviaje" value="Turismo" >
+         <!-- Opción multiple -->
+         <label for="prioturismo">Turismo</label>
+        </li>
+        <li>
+          <input type="checkbox" id="priogastronomia" name="prioridadesviaje" value="Gastronomía" >
+         <!-- Opción multiple  -->
+         <label for="priogastronomia">Gastronomía</label>
+        </li>
+        <li>
+          <input type="checkbox" id="priodescononexión" name="prioridadesviaje" value="Desconexión" >
+         <!-- Opción multiple  -->
+         <label for="priodescononexión">Desconexión</label>
+        </li>
+        <li>
+            <input type="checkbox" id="priofiesta" name="prioridadesviaje" value="Fiesta" >
+           <!-- Opción multiple  -->
+           <label for="priofiesta">Fiesta</label>
+          </li>
+       </ul>
+      </p>
+      
+      <p>
+       <label for="NumPersonas_id">¿Numero de personas?</label><br>
+            <input type="number" id="amount_id" name="amount" min="1" max="15" required>
+       <!-- Campo numérico con valor mínimo 1 y máximo 15 obligatorio -->
+      </p>
+      <p>Presupuesto por persona(€):
+       <ul>
+        <li>
+         <!-- Casilla de verificación -->
+          <input type="radio" id="pres1" name="presupuesto" value="pres1" required>
+         <label for="pres1">100-200</label>
+        </li>
+        <li>
+         <!-- Casilla de verificación -->
+           <input type="radio" id="pres2" name="presupuesto" value="pres2" required>
+         <label for="extra-2_id">201-300</label>
+        </li>
+        <li>
+         <!-- Casilla de verificación -->
+           <input type="radio" id="pres3" name="presupuesto" value="pres3" required>
+         <label for="pres3">301-400 </label>
+        </li>
+        <li>
+            <!-- Casilla de verificación -->
+             <input type="radio" id="pres4" name="presupuesto" value="pres4" required>
+            <label for="pres4">+400 </label>
+           </li>
+       </ul>
+      </p>
+     </fieldset>
+     <fieldset>
+      <legend>Fechas</legend>
+      <p class="fechas">
+       <label for="fecha_salida">Fecha de salida:</label><br>
+        <input type="date" id="fecha_salida" name="fecha" min="2024-06--01">
+       
+      </p>
+      <p class="fechas">
+        <label for="fecha_llegada">Fecha de llegada:</label><br>
+        <input type="date" id="fecha_llegada" name="fecha" min="2024-08--01">
+       
+      </p>
+     </fieldset>
+     <fieldset>
+       <input type="submit" value="Enviar">
+       <input type="reset" value="Restablecer datos">
+       
+     </fieldset>
+     <div class="volver">
+        <a href="index.html">Volver a la página principal</a>
+    </div>
+
+    </form>
+        <footer>
+        <p>&copy; JovieTravel 2024. Destinos para Viajar con Amigos en Julio</p>
+    </footer>
+    
+</body>
+</html>
